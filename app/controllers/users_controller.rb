@@ -1,8 +1,12 @@
+#coding: utf-8
+
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
     @users = User.all
+    
+    @msg = 'これは練習です！'
 
     respond_to do |format|
       format.html # index.html.erb
